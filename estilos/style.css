@@ -38,13 +38,12 @@ img {
   max-width: 960px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding-top: 10px;
 }
 
-.superinfo p,
-.superinfo a {
+.superinfo p {
   margin: 0px 10px 10px 10px;
 }
 
@@ -379,22 +378,36 @@ img {
 
 .rodape {
   display: flex;
+  flex-wrap: wrap;
   background-color: #2c70ff;
-  height: 30px;
+  height: 120px;
+  justify-content: space-around;
   align-items: center;
 }
 
-.rodape p {
-  flex: 1;
-  text-align: center;
-  font-size: 1.25em;
-  color: #122ab2;
+.rodape p,
+a {
+  color: white;
+  padding: 15px;
+  font-size: 1em;
 }
 
 /* Media Queries */
 @media (max-width: 600px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
   .newsletter-form button {
     font-size: 1.5em;
+  }
+
+  .rodape {
+    height: 150px;
   }
 }
 
